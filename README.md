@@ -4,17 +4,18 @@ This repository provides the analytical framework and code for the paper:
 **"Replacing Field Visits with Remote Sensing: Opportunities and Challenges for Agri-Environmental Monitoring."**
 
 ## Overview
-This project automates the monitoring of biodiversity indicators for Ireland's Agri Climate Rural Environment Scheme (ACRES). By aligning species-specific flowering phenology with remote sensing data (Sentinel-2, LiDAR, and SAR), we identify optimal temporal windows for habitat quality assessment.
+This project automates the monitoring of biodiversity indicators for Ireland's Agri-Climate Rural Environment Scheme (ACRES). By aligning species-specific flowering phenology with remote sensing (RS) data, we identify optimal temporal windows to maximize spectral detectability of indicator species.
 
 ## Key Features
-- **Phenological Calendar:** Automated generation of flowering windows for A1 indicator species.
-- **Habitat Categorization:** Scripts to classify Fossit habitat codes into RS-relevant monitoring groups.
-- **Journal Quality Visualization:** High-resolution (600 DPI) plotting for academic publication.
+* **Phenological Window Analysis:** Quantifies the peak survey window (**April–October**) by calculating the monthly sum of flowering species (Figure 4). This informs the selection of multi-temporal satellite imagery.
+* **Habitat-Specific Monitoring Logic:** Scripts to cross-reference **Fossitt classification** with botanical flowering periods, enabling automated habitat-specific tasking for UAV or satellite sensors.
+* **A1 Positive Indicator Mapping:** A specialized logic to visualize the flowering duration of A1 species across 10 ACRES scorecards, grouped by habitat type (Figure 2).
+* **High-Resolution Data Visualization:** Generates 600 DPI publication-ready plots that illustrate the sharp increase in flowering activity from April, peaking in June/July.
 
 ## How to Use
-1. **Requirements:** Install dependencies using `pip install pandas matplotlib openpyxl`.
-2. **Data:** Ensure the `Verified_ A1_Positive_indicators_Verified.xlsx` is in the root directory.
-3. **Execution:** Run the Jupyter Notebook `Flowering_Calendar_ACRES.ipynb` to generate the phenological plots and distribution graphs.
+1. **Requirements:** Install dependencies via `pip install -r requirements.txt`.
+2. **Data:** The script requires `Verified_ A1_Positive_indicators_Verified.xlsx` to be present in the root folder.
+3. **Execution:** Run the Jupyter Notebook `Flowering_Calendar_ACRES.ipynb` to regenerate the phenological calendars and distribution graphs used in the paper.
 
-## Results
-The analysis establishes that 56% (n=70) of ACRES indicators are suitable for remote sensing integration, with structural and hydrological attributes showing the highest operational readiness (85–98% accuracy)..
+## Results for Review
+The analysis supports the paper's findings that **56% (n=70)** of ACRES indicators are suitable for RS integration. The code demonstrates that peak detectability for A1 species is synchronized across most habitats during the mid-summer window, supporting the shift from manual field visits to automated spectral monitoring.
