@@ -1,6 +1,12 @@
 # ACRES Remote Sensing Phenology
 
-This repository provides the analytical framework and code for the paper: 
+![Visual Abstract](Visual_Abstract_ACRES_Final.png)
+
+**Visual Abstract.** Multi-panel summary of Remote Sensing (RS) integration potential for ACRES monitoring. **(A)** Overall operational readiness showing 56% (n=70) indicator suitability; **(B)** Temporal sensing window derived from species-specific flowering phenology, identifying the peak detectability period (June–July); and **(C)** Hierarchy of operational readiness across 10 habitat-specific scorecards, ranging from high-feasibility avian habitats (Chough, 91%) to complex structural habitats (Rough Grazing, 23%). All visualizations were generated using the provided Python analytical framework.
+
+---
+
+This repository provides the analytical framework and code for the paper:  
 **"Replacing Field Visits with Remote Sensing: Opportunities and Challenges for Agri-Environmental Monitoring."**
 
 ## Overview
