@@ -23,5 +23,5 @@ This project automates the monitoring of biodiversity indicators for Ireland's A
 2. **Data:** The script requires `Verified_ A1_Positive_indicators_Verified.xlsx` to be present in the root folder.
 3. **Execution:** Run the Jupyter Notebook `Flowering_Calendar_ACRES.ipynb` to regenerate the phenological calendars and distribution graphs used in the paper.
 
-## Results for Review
+## Results
 The analysis supports the paper's findings that **56% (n=70)** of ACRES indicators are suitable for RS integration. The code demonstrates that peak detectability for A1 species is synchronized across most habitats during the mid-summer window, supporting the shift from manual field visits to automated spectral monitoring.
